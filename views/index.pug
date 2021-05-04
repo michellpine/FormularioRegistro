@@ -1,0 +1,17 @@
+extends layout 
+
+block content
+  a(href="/register") Register
+  br 
+  table
+    thead
+      tr                  
+        th
+          span(class="text") Name               
+        th
+          span(class="text") Email 
+    tbody
+      each visitor in visitors
+        tr          
+          td= visitor.name        
+          td= visitor.email
